@@ -1,0 +1,28 @@
+Best model: GradientBoosting
+
+Cross-validation macro-F1 (5-fold) by model:
+  LogisticRegression: 0.548
+  RandomForest: 0.540
+  GradientBoosting: 0.584
+
+--- Held-out test set (20% of data, n=254) ---
+Accuracy               : 0.709
+Macro F1                : 0.566
+Weighted F1             : 0.695
+Exact match rate        : 0.709
+Within +/-1 KTAS level  : 0.937
+Under-triage rate       : 0.138  (predicted LESS urgent than truth)
+Over-triage rate        : 0.154  (predicted MORE urgent than truth)
+
+Per-class classification report:
+              precision    recall  f1-score   support
+
+           1      0.667     0.400     0.500         5
+           2      0.658     0.568     0.610        44
+           3      0.700     0.786     0.740        98
+           4      0.755     0.804     0.779        92
+           5      0.400     0.133     0.200        15
+
+    accuracy                          0.709       254
+   macro avg      0.636     0.538     0.566       254
+weighted avg      0.694     0.709     0.695       254
